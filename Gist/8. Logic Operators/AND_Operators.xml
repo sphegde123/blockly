@@ -1,0 +1,67 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+	<variable type="" id="NpH/cJp#NFU-AHV/:d|p">num</variable>
+  </variables>
+  <block type="variables_set" id="-{bwLYcsld`OOe*nI:wr" x="213" y="-62">
+	<field name="VAR" id="NpH/cJp#NFU-AHV/:d|p" variabletype="">num</field>
+	<value name="VALUE">
+  	<block type="text_prompt_ext" id="/Dw]m,{sN)r{AJF,]~=U">
+    	<mutation type="NUMBER"></mutation>
+    	<field name="TYPE">NUMBER</field>
+    	<value name="TEXT">
+      	<shadow type="text" id=".GMvx?LL`a|fmeg[Y=B_">
+        	<field name="TEXT">Please enter a number</field>
+      	</shadow>
+    	</value>
+  	</block>
+	</value>
+	<next>
+  	<block type="controls_if" id="-x)_YJWg.CuZw}k5=pAr">
+    	<value name="IF0">
+      	<block type="logic_operation" id=":w=RO7PK*yHr+}P`5n*V">
+        	<field name="OP">AND</field>
+        	<value name="A">
+          	<block type="logic_compare" id="~`}*)*][,1f`M=CfCDFp">
+            	<field name="OP">LT</field>
+            	<value name="A">
+              	<block type="math_number" id="gVp1od{[6V,zgTW0RFmn">
+                	<field name="NUM">10.5</field>
+              	</block>
+            	</value>
+            	<value name="B">
+              	<block type="variables_get" id="LwQ]]g0,,A:LN9|5,=},">
+                	<field name="VAR" id="NpH/cJp#NFU-AHV/:d|p" variabletype="">num</field>
+              	</block>
+            	</value>
+          	</block>
+        	</value>
+        	<value name="B">
+          	<block type="logic_compare" id="9=x:Xz75Jz8_id:gkO?s">
+            	<field name="OP">LT</field>
+            	<value name="A">
+              	<block type="variables_get" id="6VPmh:#JYKDYf1m|R9TG">
+                	<field name="VAR" id="NpH/cJp#NFU-AHV/:d|p" variabletype="">num</field>
+              	</block>
+            	</value>
+            	<value name="B">
+              	<block type="math_number" id="F~}2Hm9]df:Ww8u^pFiD">
+                	<field name="NUM">20.5</field>
+              	</block>
+            	</value>
+          	</block>
+        	</value>
+      	</block>
+    	</value>
+    	<statement name="DO0">
+      	<block type="text_print" id="SeS#`C}!yQ=/?J8b}}nH">
+        	<value name="TEXT">
+          	<shadow type="text" id=";H9-URCo{y5|z%HCd+w?">
+            	<field name="TEXT">The number is between 10.5 and 20.5, exclusively</field>
+          	</shadow>
+        	</value>
+      	</block>
+    	</statement>
+  	</block>
+	</next>
+  </block>
+</xml>
