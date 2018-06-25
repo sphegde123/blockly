@@ -1,0 +1,49 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+	<variable type="" id="b,k[%}e#v`sQB)h0$^]u">age</variable>
+  </variables>
+  <block type="variables_set" id="pv@p|eJ}1.(}T.c-m7C#" x="-137" y="-62">
+	<field name="VAR" id="b,k[%}e#v`sQB)h0$^]u" variabletype="">age</field>
+	<value name="VALUE">
+  	<block type="text_prompt_ext" id="E;v)~=*VhQB4:RW%!hW%">
+    	<mutation type="TEXT"></mutation>
+    	<field name="TYPE">TEXT</field>
+    	<value name="TEXT">
+      	<shadow type="text" id="4(ZRT9JslREZ|q.?SXW/">
+        	<field name="TEXT">abc</field>
+      	</shadow>
+      	<block type="text" id="LGlxkw#2droL$N|FS;xQ">
+        	<field name="TEXT">Please enter your age</field>
+      	</block>
+    	</value>
+  	</block>
+	</value>
+	<next>
+  	<block type="text_print" id="OV)R-M-WpbrbbwK!8..H">
+    	<value name="TEXT">
+      	<shadow type="text" id="H)XdDksH;=YM*z1(ATkz">
+        	<field name="TEXT">abc</field>
+      	</shadow>
+      	<block type="text_join" id="Ms3CQEy[_G8_5=UZ:c;9">
+        	<mutation items="3"></mutation>
+        	<value name="ADD0">
+          	<block type="text" id="J3Vm3mEr6PHaOndX#mWu">
+            	<field name="TEXT">You are </field>
+          	</block>
+        	</value>
+        	<value name="ADD1">
+          	<block type="variables_get" id="1+dw3Cy+t!e[G)c|2}M?">
+            	<field name="VAR" id="b,k[%}e#v`sQB)h0$^]u" variabletype="">age</field>
+          	</block>
+        	</value>
+        	<value name="ADD2">
+          	<block type="text" id="G@nohhYh*-.*EV*2sULc">
+            	<field name="TEXT"> years old!</field>
+          	</block>
+        	</value>
+      	</block>
+    	</value>
+  	</block>
+	</next>
+  </block>
+</xml>
