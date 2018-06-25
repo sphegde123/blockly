@@ -1,0 +1,75 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+	<variable type="" id="@c@zy/%BL//|*y|_I0J1">Num</variable>
+  </variables>
+  <block type="variables_set" id="6i]nO]O4/RcTmll~Z1#p" x="338" y="163">
+	<field name="VAR" id="@c@zy/%BL//|*y|_I0J1" variabletype="">Num</field>
+	<value name="VALUE">
+  	<block type="text_prompt_ext" id="98`iNpl(ee$6ZgaYm*a^">
+    	<mutation type="TEXT"></mutation>
+    	<field name="TYPE">TEXT</field>
+    	<value name="TEXT">
+      	<shadow type="text" id=")O(X2rYW8TA[@1my9+VO">
+        	<field name="TEXT">Please enter an integer value</field>
+      	</shadow>
+    	</value>
+  	</block>
+	</value>
+	<next>
+  	<block type="controls_if" id="L]_/rstS0Ja,?se+;`[#">
+    	<value name="IF0">
+      	<block type="logic_compare" id="v:%NwpO{A6T2;pmil^Xe">
+        	<field name="OP">GT</field>
+        	<value name="A">
+          	<block type="variables_get" id="VS0F)36U^*aC{,eU!ID=">
+            	<field name="VAR" id="@c@zy/%BL//|*y|_I0J1" variabletype="">Num</field>
+          	</block>
+        	</value>
+        	<value name="B">
+          	<block type="math_number" id="13KXUCcTgR_-N7NGSI*=">
+            	<field name="NUM">0</field>
+          	</block>
+        	</value>
+      	</block>
+    	</value>
+    	<statement name="DO0">
+      	<block type="text_print" id="$dLVf9eRceYRc^He$)D`">
+        	<value name="TEXT">
+          	<shadow type="text" id="vnq$x|B91ZKEqfIW^h,^">
+            	<field name="TEXT">The number is positive</field>
+          	</shadow>
+        	</value>
+      	</block>
+    	</statement>
+    	<next>
+      	<block type="controls_if" id="uRzfrW4*4z@qgg,4I(,m">
+        	<value name="IF0">
+          	<block type="logic_compare" id="Z-0YQh,CFNqOcVF}zE_]">
+            	<field name="OP">GT</field>
+            	<value name="A">
+              	<block type="variables_get" id="#6#S{WTKbRH6n/UXPj%t">
+                	<field name="VAR" id="@c@zy/%BL//|*y|_I0J1" variabletype="">Num</field>
+              	</block>
+            	</value>
+            	<value name="B">
+              	<block type="math_number" id="vq{m=-pjY#z:xozIrQDJ">
+                	<field name="NUM">20</field>
+              	</block>
+            	</value>
+          	</block>
+        	</value>
+        	<statement name="DO0">
+          	<block type="text_print" id="O%b3OFab{5m5[1Ra?,Xn">
+            	<value name="TEXT">
+              	<shadow type="text" id="_(ZDz*qX]c+UM/%K-#t/">
+                	<field name="TEXT">The number is greater than 20</field>
+              	</shadow>
+            	</value>
+          	</block>
+        	</statement>
+      	</block>
+    	</next>
+  	</block>
+	</next>
+  </block>
+</xml>
