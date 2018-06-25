@@ -1,0 +1,49 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+	<variable type="" id="%Ca.*9LWcK7d(d[MY8Q_">name</variable>
+  </variables>
+  <block type="variables_set" id="phf_nP9M|3gJX!V7m^xA" x="-212" y="-112">
+	<field name="VAR" id="%Ca.*9LWcK7d(d[MY8Q_" variabletype="">name</field>
+	<value name="VALUE">
+  	<block type="text_prompt_ext" id=".00YwW*8oSU}@XKZz5RY">
+    	<mutation type="TEXT"></mutation>
+    	<field name="TYPE">TEXT</field>
+    	<value name="TEXT">
+      	<shadow type="text" id="s/:ExB;!t`Sheqg)V+WR">
+        	<field name="TEXT">abc</field>
+      	</shadow>
+      	<block type="text" id="o4w@#mVW4tHSbGZ|bMF8">
+        	<field name="TEXT">Please enter your name</field>
+      	</block>
+    	</value>
+  	</block>
+	</value>
+	<next>
+  	<block type="text_print" id="dp,E~vc_jfBN[nN:).Z)">
+    	<value name="TEXT">
+      	<shadow type="text" id="Aqv5~afQtw*3)qcL~#bd">
+        	<field name="TEXT">abc</field>
+      	</shadow>
+      	<block type="text_join" id="`nV~^}QvK[%!c8zQI0J-">
+        	<mutation items="3"></mutation>
+        	<value name="ADD0">
+          	<block type="text" id="02H(!$2upJu9m93gq|oX">
+            	<field name="TEXT">Hello </field>
+          	</block>
+        	</value>
+        	<value name="ADD1">
+          	<block type="variables_get" id="n3:GAwNuq7H}ql]`BC$h">
+            	<field name="VAR" id="%Ca.*9LWcK7d(d[MY8Q_" variabletype="">name</field>
+          	</block>
+        	</value>
+        	<value name="ADD2">
+          	<block type="text" id="R}ntw=W~![[6,(Y:]7,E">
+            	<field name="TEXT">! Welcome to this course!</field>
+          	</block>
+        	</value>
+      	</block>
+    	</value>
+  	</block>
+	</next>
+  </block>
+</xml>
