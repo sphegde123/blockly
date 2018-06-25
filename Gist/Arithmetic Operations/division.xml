@@ -1,0 +1,67 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id="g(]b.EIe(kK_iMkiX9}w" x="213" y="62">
+	<value name="TEXT">
+  	<shadow type="text" id="@R0F*ghQ*5!F@l#B-3xT">
+    	<field name="TEXT">abc</field>
+  	</shadow>
+  	<block type="math_arithmetic" id="PH?u;M3)rHo.w:EZqLuZ">
+    	<field name="OP">DIVIDE</field>
+    	<value name="A">
+      	<shadow type="math_number" id="V@aPN69MdaFBi/q:S$]d">
+        	<field name="NUM">10</field>
+      	</shadow>
+    	</value>
+    	<value name="B">
+      	<shadow type="math_number" id="`*lJblBighgXp|m=NF~t">
+        	<field name="NUM">2</field>
+      	</shadow>
+    	</value>
+  	</block>
+	</value>
+	<next>
+  	<block type="text_print" id="[^q4QK6-Umidr1}]to/H">
+    	<value name="TEXT">
+      	<shadow type="text" id="#|@g4^qV:~(%]t1kq:Y0">
+        	<field name="TEXT">abc</field>
+      	</shadow>
+      	<block type="math_arithmetic" id="BW4Ppt}P:+_U58.!wE@I">
+        	<field name="OP">DIVIDE</field>
+        	<value name="A">
+          	<shadow type="math_number" id="7fw7%i$PLR,o+;eVjxMt">
+            	<field name="NUM">5</field>
+          	</shadow>
+        	</value>
+        	<value name="B">
+          	<shadow type="math_number" id="O/I(djUbUCJF{ZDFAHh}">
+            	<field name="NUM">2</field>
+          	</shadow>
+        	</value>
+      	</block>
+    	</value>
+    	<next>
+      	<block type="text_print" id="k*lKlqG`n5*[l|EWoQW~">
+        	<value name="TEXT">
+          	<shadow type="text" id="qt(@_itgfb/zAV17%ff/">
+            	<field name="TEXT">abc</field>
+          	</shadow>
+          	<block type="math_arithmetic" id="uDEUJ+zCA+p~S$:0UN#V">
+            	<field name="OP">DIVIDE</field>
+            	<value name="A">
+              	<shadow type="math_number" id="X6~*W9:(?qTxads%=+Z;">
+                	<field name="NUM">5.1</field>
+              	</shadow>
+            	</value>
+            	<value name="B">
+              	<shadow type="math_number" id="6JYpv;(3:gW=rEl)Di?r">
+                	<field name="NUM">2</field>
+              	</shadow>
+            	</value>
+          	</block>
+        	</value>
+      	</block>
+    	</next>
+  	</block>
+	</next>
+  </block>
+</xml>
