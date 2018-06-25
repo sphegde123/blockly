@@ -1,0 +1,98 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+	<variable type="" id="inSuwnxm9o.J;6(gUU4t">score</variable>
+  </variables>
+  <block type="variables_set" id="LvM.Um]%_XMbUMfZ-bc`" x="62" y="-262">
+	<field name="VAR" id="inSuwnxm9o.J;6(gUU4t" variabletype="">score</field>
+	<value name="VALUE">
+  	<block type="text_prompt_ext" id="Q]#%,M}k+dbIj^n5iJEN">
+    	<mutation type="NUMBER"></mutation>
+    	<field name="TYPE">NUMBER</field>
+    	<value name="TEXT">
+      	<shadow type="text" id="_e/f1E[~meu`lc1~(B~a">
+        	<field name="TEXT">abc</field>
+      	</shadow>
+      	<block type="text" id="r5@j*W;~njG*XlQeED%/">
+        	<field name="TEXT">Please enter your score</field>
+      	</block>
+    	</value>
+  	</block>
+	</value>
+	<next>
+  	<block type="controls_if" id="O}ofXW1RMI;}]+.K9OhM">
+    	<mutation else="1"></mutation>
+    	<value name="IF0">
+      	<block type="logic_compare" id=";3S:^p3-:Pq:LCR6Yo$W">
+        	<field name="OP">GTE</field>
+        	<value name="A">
+          	<block type="variables_get" id="!.=^!S4l.4rB5~]06WWB">
+            	<field name="VAR" id="inSuwnxm9o.J;6(gUU4t" variabletype="">score</field>
+          	</block>
+        	</value>
+        	<value name="B">
+          	<block type="math_number" id="[mTfS1EpFuO`J$S/F)bC">
+            	<field name="NUM">80</field>
+          	</block>
+        	</value>
+      	</block>
+    	</value>
+    	<statement name="DO0">
+      	<block type="controls_if" id="5zX/=c*NTfix%+G;C/y9">
+        	<mutation else="1"></mutation>
+        	<value name="IF0">
+          	<block type="logic_compare" id="W,-;5k}SoX/~J^GgvROv">
+            	<field name="OP">EQ</field>
+            	<value name="A">
+              	<block type="variables_get" id="5;p8aOxIs3rK37Ph7@OD">
+                	<field name="VAR" id="inSuwnxm9o.J;6(gUU4t" variabletype="">score</field>
+              	</block>
+            	</value>
+            	<value name="B">
+              	<block type="math_number" id="J~})U@#s,kwa%Htg0EGP">
+                	<field name="NUM">100</field>
+              	</block>
+            	</value>
+          	</block>
+        	</value>
+        	<statement name="DO0">
+          	<block type="text_print" id="uJ5$II9`Np=3v8xk|bhn">
+            	<value name="TEXT">
+              	<shadow type="text" id=";^`r}=]A^Kpxl6^`xGH6">
+                	<field name="TEXT">abc</field>
+              	</shadow>
+              	<block type="text" id="~lY,{8=6[K0U|m+v+u*R">
+                	<field name="TEXT">You passed with a perfect score</field>
+              	</block>
+            	</value>
+          	</block>
+        	</statement>
+        	<statement name="ELSE">
+          	<block type="text_print" id="q.7PsA}AY-7QBwnj;eSL">
+            	<value name="TEXT">
+              	<shadow type="text" id=";^`r}=]A^Kpxl6^`xGH6">
+                	<field name="TEXT">abc</field>
+              	</shadow>
+              	<block type="text" id="{cQ{`:Zdq---|OQ2W%A-">
+                	<field name="TEXT">You passed!</field>
+              	</block>
+            	</value>
+          	</block>
+        	</statement>
+      	</block>
+    	</statement>
+    	<statement name="ELSE">
+      	<block type="text_print" id="NRwK}2%uW7v$eW~td$)T">
+        	<value name="TEXT">
+          	<shadow type="text" id=";^`r}=]A^Kpxl6^`xGH6">
+            	<field name="TEXT">abc</field>
+          	</shadow>
+          	<block type="text" id="]b|`TbN:C2H-2Z4165_W">
+            	<field name="TEXT">You did not pass.</field>
+          	</block>
+        	</value>
+      	</block>
+    	</statement>
+  	</block>
+	</next>
+  </block>
+</xml>
