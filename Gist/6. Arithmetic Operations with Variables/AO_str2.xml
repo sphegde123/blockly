@@ -1,0 +1,53 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+	<variable type="" id="e?fZ_Xk;^|`4Af`jMvtI">String1</variable>
+	<variable type="" id="LGF:zrob+]+X:ycHa@%W">String2</variable>
+  </variables>
+  <block type="variables_set" id="#4@_a,uK#?`6E+88QE3P" x="138" y="138">
+	<field name="VAR" id="e?fZ_Xk;^|`4Af`jMvtI" variabletype="">String1</field>
+	<value name="VALUE">
+  	<block type="text" id="oF.-HZGWS6MJ4luNC)tA">
+    	<field name="TEXT">Orange</field>
+  	</block>
+	</value>
+	<next>
+  	<block type="variables_set" id="c)z8!tk6h]%;PqpdErVp">
+    	<field name="VAR" id="LGF:zrob+]+X:ycHa@%W" variabletype="">String2</field>
+    	<value name="VALUE">
+      	<block type="text" id="D]zhafEZrpaAy?Fk}_+S">
+        	<field name="TEXT">Juice</field>
+      	</block>
+    	</value>
+    	<next>
+      	<block type="text_print" id="6aT9yVNn{1TlEGzlamYC">
+        	<value name="TEXT">
+          	<shadow type="text" id="{FAXlN[LY*,rxDeId9.+">
+            	<field name="TEXT">abc</field>
+          	</shadow>
+          	<block type="math_arithmetic" id="{hJj*]5_V2Wrt=5`N*E7">
+            	<field name="OP">ADD</field>
+            	<value name="A">
+              	<shadow type="math_number" id="7}A4o8,r6BpgTnqbKwh2">
+                	<field name="NUM">1</field>
+              	</shadow>
+              	<block type="variables_get" id="y9BX:-%J#0[I+AGJEpq)">
+                	<field name="VAR" id="e?fZ_Xk;^|`4Af`jMvtI" variabletype="">String1</field>
+              	</block>
+            	</value>
+            	<value name="B">
+              	<shadow type="math_number" id="GaF*t-ywcXXU+x=1P8}.">
+                	<field name="NUM">1</field>
+              	</shadow>
+              	<block type="variables_get" id="6o8Iy74=8t,V`dm$TE-:">
+                	<field name="VAR" id="LGF:zrob+]+X:ycHa@%W" variabletype="">String2</field>
+              	</block>
+            	</value>
+          	</block>
+        	</value>
+      	</block>
+    	</next>
+  	</block>
+	</next>
+  </block>
+</xml>
+
