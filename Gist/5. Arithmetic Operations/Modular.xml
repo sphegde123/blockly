@@ -1,0 +1,22 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id="nzJMCMO$(z]/,O~Bt`5C" x="88" y="38">
+	<value name="TEXT">
+  	<shadow type="text" id="E~y9.xL@v6R~.fstT4ty">
+    	<field name="TEXT">abc</field>
+  	</shadow>
+  	<block type="math_modulo" id="|SA*ZYQ0)]Us~^07AZvF">
+    	<value name="DIVIDEND">
+      	<shadow type="math_number" id="@$`LB[}SD-=-Zdr@}ZNr">
+        	<field name="NUM">14</field>
+      	</shadow>
+    	</value>
+    	<value name="DIVISOR">
+      	<shadow type="math_number" id="xIKD*ZBOln%7vSr6I1Gt">
+        	<field name="NUM">3</field>
+      	</shadow>
+    	</value>
+  	</block>
+	</value>
+  </block>
+</xml>
