@@ -1,0 +1,48 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+	<variable type="" id="j2)ND?%-hp1dpitN^+i^">x</variable>
+	<variable type="" id="|~G.hE=O(*dM4`Y|82bZ">y</variable>
+  </variables>
+  <block type="variables_set" id="Rm`*BdE%yFy:r^kxVS+3" x="-213" y="-112">
+	<field name="VAR" id="j2)ND?%-hp1dpitN^+i^" variabletype="">x</field>
+	<value name="VALUE">
+  	<block type="math_number" id="5k8e-R{CU3ot:e{V9Udn">
+    	<field name="NUM">12</field>
+  	</block>
+	</value>
+	<next>
+  	<block type="variables_set" id="p2a$0=05+la8qrYmMv-%">
+    	<field name="VAR" id="|~G.hE=O(*dM4`Y|82bZ" variabletype="">y</field>
+    	<value name="VALUE">
+      	<block type="variables_get" id="YHKlRE2d`y#EUKC(518*">
+        	<field name="VAR" id="j2)ND?%-hp1dpitN^+i^" variabletype="">x</field>
+      	</block>
+    	</value>
+    	<next>
+      	<block type="text_print" id="v!0MQVJVjq@v53GVq+}K">
+        	<value name="TEXT">
+          	<shadow type="text" id="AQpg|%.vq)MVQ/C0#E{R">
+            	<field name="TEXT">abc</field>
+          	</shadow>
+          	<block type="variables_get" id="sYdyFX0q^DwjG0,|h,j$">
+            	<field name="VAR" id="j2)ND?%-hp1dpitN^+i^" variabletype="">x</field>
+          	</block>
+        	</value>
+<next>
+          	<block type="text_print" id="~M6ae.@u[FT(O124dTxQ">
+            	<value name="TEXT">
+              	<shadow type="text" id="wc(;2A[_,~*4k.e,H8*)">
+                	<field name="TEXT">abc</field>
+              	</shadow>
+              	<block type="variables_get" id="yNmgJFG8V*uu}yZ9lq0s">
+                	<field name="VAR" id="|~G.hE=O(*dM4`Y|82bZ" variabletype="">y</field>
+              	</block>
+            	</value>
+          	</block>
+        	</next>
+      	</block>
+    	</next>
+  	</block>
+	</next>
+  </block>
+</xml>
