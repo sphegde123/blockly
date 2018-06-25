@@ -1,0 +1,73 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+	<variable type="" id="gXmCjJ?Xa@P}C{pT6Ybx">num</variable>
+  </variables>
+  <block type="variables_set" id="zKXsoahF5)vZ5~2r14xq" x="112" y="62">
+	<field name="VAR" id="gXmCjJ?Xa@P}C{pT6Ybx" variabletype="">num</field>
+	<value name="VALUE">
+  	<block type="text_prompt_ext" id=".pk@OLt5w9kIrIx-}!hu">
+    	<mutation type="NUMBER"></mutation>
+    	<field name="TYPE">NUMBER</field>
+    	<value name="TEXT">
+      	<shadow type="text" id="cIngSph[UcKSv+X|_POA">
+        	<field name="TEXT">abc</field>
+      	</shadow>
+      	<block type="text" id="j-bd:*DzG:25`-m,g!n`">
+        	<field name="TEXT">Please enter a number</field>
+      	</block>
+    	</value>
+  	</block>
+	</value>
+	<next>
+  	<block type="controls_if" id="|ebkSI5Ns}7tg=s?S)]2">
+    	<value name="IF0">
+      	<block type="logic_operation" id="GRJ=Jli9*?ILVR+H#f%u">
+        	<field name="OP">OR</field>
+        	<value name="A">
+          	<block type="logic_compare" id="?8^l2;R]GWl-D?-oo`)x">
+            	<field name="OP">LT</field>
+            	<value name="A">
+              	<block type="variables_get" id="}[vM5T=Z^oDIkkwMV@P+">
+                	<field name="VAR" id="gXmCjJ?Xa@P}C{pT6Ybx" variabletype="">num</field>
+              	</block>
+            	</value>
+            	<value name="B">
+              	<block type="math_number" id="z]qwyX[Vt3%VAU:{Q2aE">
+                	<field name="NUM">10.5</field>
+              	</block>
+            	</value>
+          	</block>
+        	</value>
+        	<value name="B">
+          	<block type="logic_compare" id="M.%UkY=kLh0d,[Sm=:D?">
+            	<field name="OP">GT</field>
+            	<value name="A">
+              	<block type="variables_get" id="DV;0lQi.AStSvEeM+@Gw">
+                	<field name="VAR" id="gXmCjJ?Xa@P}C{pT6Ybx" variabletype="">num</field>
+              	</block>
+            	</value>
+            	<value name="B">
+              	<block type="math_number" id="%Fa:m!*GQXy]36R9m8]s">
+                	<field name="NUM">20.5</field>
+              	</block>
+            	</value>
+          	</block>
+        	</value>
+      	</block>
+    	</value>
+    	<statement name="DO0">
+      	<block type="text_print" id="d,yHJ%|V~k:14hyh)/B(">
+        	<value name="TEXT">
+          	<shadow type="text" id="(XG;$ls;G`Tn7/+$[[QM">
+            	<field name="TEXT">abc</field>
+          	</shadow>
+          	<block type="text" id="PvPaCc026GtgWHyq#BIn">
+            	<field name="TEXT">The number is not in the range from 10.5 to 20.5</field>
+          	</block>
+        	</value>
+      	</block>
+    	</statement>
+  	</block>
+	</next>
+  </block>
+</xml>
