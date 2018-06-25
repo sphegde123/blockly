@@ -1,0 +1,44 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+	<variable type="" id="ovXoCe|(%y*~m}oNuvrt">x</variable>
+  </variables>
+  <block type="variables_set" id="pm=sEa~4noW]A$k0;~G/" x="137" y="112">
+	<field name="VAR" id="ovXoCe|(%y*~m}oNuvrt" variabletype="">x</field>
+	<value name="VALUE">
+  	<block type="text_prompt_ext" id="C8#sSMn=V!34BDG#.+,]">
+    	<mutation type="NUMBER"></mutation>
+    	<field name="TYPE">NUMBER</field>
+    	<value name="TEXT">
+      	<shadow type="text" id="{*jU{r%KNz?a=^z%OcQR">
+        	<field name="TEXT">Please enter an int or float</field>
+      	</shadow>
+    	</value>
+  	</block>
+	</value>
+	<next>
+  	<block type="text_print" id=")]lmiXeUTr(CZ;oH]9wp">
+    	<value name="TEXT">
+      	<shadow type="text" id="NiTGry!Xx[uN7j2(slYq">
+        	<field name="TEXT">abc</field>
+      	</shadow>
+      	<block type="math_arithmetic" id="#HyZ#zNt$[tdV:7HE6ae">
+        	<field name="OP">ADD</field>
+        	<value name="A">
+          	<shadow type="math_number" id="L1@xekNY8W!ze/[~e%;r">
+            	<field name="NUM">1</field>
+          	</shadow>
+          	<block type="variables_get" id="Vu]d;%wl]mA^%9kAys@9">
+            	<field name="VAR" id="ovXoCe|(%y*~m}oNuvrt" variabletype="">x</field>
+          	</block>
+        	</value>
+        	<value name="B">
+          	<shadow type="math_number" id="J_JEpD+fmP-,3rP?+Sv^">
+            	<field name="NUM">5</field>
+          	</shadow>
+        	</value>
+      	</block>
+    	</value>
+  	</block>
+	</next>
+  </block>
+</xml>
