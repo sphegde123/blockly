@@ -1,0 +1,10 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id="xI88wN;2t!^J#v.?0YAg" x="188" y="112">
+    <value name="TEXT">
+      <shadow type="text" id="n!JgP./hj[Ev@%qQ}Nqe">
+        <field name="TEXT">123</field>
+      </shadow>
+    </value>
+  </block>
+</xml>
