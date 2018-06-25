@@ -1,0 +1,13 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id="*3!FhlFoJ/*fZ8]G2Wli" x="363" y="113">
+    <value name="TEXT">
+      <shadow type="text" id="qF2vNfnDB4Ye)Cgjh{5O">
+        <field name="TEXT">abc</field>
+      </shadow>
+      <block type="math_number" id="inA*?BcyYzAL56@}*1[|">
+        <field name="NUM">1.5</field>
+      </block>
+    </value>
+  </block>
+</xml>
