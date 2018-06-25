@@ -1,0 +1,75 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+	<variable type="" id="J*F{^f/}vN{%SRFdYY^h">fever</variable>
+	<variable type="" id="awaTsB^Yl*F@JCAABY#3">cough</variable>
+  </variables>
+  <block type="variables_set" id="[vk9|#aHs*-O6T{y-5e(" x="87" y="63">
+	<field name="VAR" id="J*F{^f/}vN{%SRFdYY^h" variabletype="">fever</field>
+	<value name="VALUE">
+  	<block type="logic_boolean" id="A#MpCyE95JY3Iz%~10xe">
+    	<field name="BOOL">TRUE</field>
+  	</block>
+	</value>
+	<next>
+  	<block type="variables_set" id="){3l?8J?{bj;9s0vE35h">
+    	<field name="VAR" id="awaTsB^Yl*F@JCAABY#3" variabletype="">cough</field>
+    	<value name="VALUE">
+      	<block type="logic_boolean" id="ArxH9tkEqM92YZr@M:eW">
+        	<field name="BOOL">FALSE</field>
+      	</block>
+    	</value>
+    	<next>
+      	<block type="controls_if" id="bDU}0]}QIK4!TGZO%`XF">
+        	<value name="IF0">
+          	<block type="logic_operation" id=".l=[@[rx:Si,k*hxDo!{">
+            	<field name="OP">OR</field>
+            	<value name="A">
+              	<block type="logic_compare" id="CUgoFSo(RVN[}l:=]jE;">
+                	<field name="OP">EQ</field>
+                	<value name="A">
+                  	<block type="variables_get" id="xh}FKjkpjkWhS-(7$GqM">
+                    	<field name="VAR" id="J*F{^f/}vN{%SRFdYY^h" variabletype="">fever</field>
+                  	</block>
+                	</value>
+                	<value name="B">
+                  	<block type="logic_boolean" id="=ge9?TSKShv)54Vnf=KZ">
+                    	<field name="BOOL">TRUE</field>
+                  	</block>
+                	</value>
+              	</block>
+            	</value>
+            	<value name="B">
+              	<block type="logic_compare" id="3yIq$7C+mn(.C=b5m-Br">
+                	<field name="OP">EQ</field>
+                	<value name="A">
+                  	<block type="variables_get" id="Kg[0w,WV)v.#!jtp1-ZA">
+                    	<field name="VAR" id="awaTsB^Yl*F@JCAABY#3" variabletype="">cough</field>
+                  	</block>
+                	</value>
+                	<value name="B">
+                  	<block type="logic_boolean" id="Wm0Doel]?`9(t6E/8a3c">
+                    	<field name="BOOL">TRUE</field>
+                  	</block>
+                	</value>
+              	</block>
+            	</value>
+          	</block>
+        	</value>
+        	<statement name="DO0">
+          	<block type="text_print" id="{NFr2RA]_=}P?1h5cQU9">
+            	<value name="TEXT">
+              	<shadow type="text" id="FP8C5(nxjAH?X)@JS1HR">
+                	<field name="TEXT">abc</field>
+              	</shadow>
+              	<block type="text" id="pp?pF?RiJcJu7{=x]=}^">
+                	<field name="TEXT">I will see a doctor</field>
+              	</block>
+            	</value>
+          	</block>
+        	</statement>
+      	</block>
+    	</next>
+  	</block>
+	</next>
+  </block>
+</xml>
