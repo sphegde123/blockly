@@ -1,0 +1,52 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+	<variable type="" id="X;zy$/hx4e}t*6k2H.9L">fever</variable>
+	<variable type="" id="a2tx1ho;an]p{=ya?YuV">cough</variable>
+  </variables>
+  <block type="variables_set" id="jPji0*)gp(@;u:;Pu,-!" x="313" y="62">
+	<field name="VAR" id="X;zy$/hx4e}t*6k2H.9L" variabletype="">fever</field>
+	<value name="VALUE">
+  	<block type="logic_boolean" id="8J8e#xi@r*3e*gkUnoV`">
+    	<field name="BOOL">TRUE</field>
+  	</block>
+	</value>
+	<next>
+  	<block type="variables_set" id="b5`5~vX%U~5D*ns-`c}Y">
+    	<field name="VAR" id="a2tx1ho;an]p{=ya?YuV" variabletype="">cough</field>
+    	<value name="VALUE">
+      	<block type="logic_boolean" id="=@?qE|v74OjgxOARmPro">
+        	<field name="BOOL">FALSE</field>
+      	</block>
+    	</value>
+    	<next>
+      	<block type="controls_if" id="f/fd_(sN@!xY2a-L8TxV">
+        	<value name="IF0">
+          	<block type="logic_operation" id="t;-3_C=x+OLx_?zR9/ER">
+            	<field name="OP">OR</field>
+            	<value name="A">
+              	<block type="variables_get" id="JCvsSq`M|q@1ORv-1!Eq">
+                	<field name="VAR" id="X;zy$/hx4e}t*6k2H.9L" variabletype="">fever</field>
+              	</block>
+            	</value>
+            	<value name="B">
+              	<block type="variables_get" id=":H|7NueN}A^)u{}k4SK5">
+                	<field name="VAR" id="a2tx1ho;an]p{=ya?YuV" variabletype="">cough</field>
+              	</block>
+            	</value>
+          	</block>
+        	</value>
+        	<statement name="DO0">
+          	<block type="text_print" id="N5b9b{|jB=HHJQGBZYVe">
+            	<value name="TEXT">
+              	<shadow type="text" id="?ao|77r9r|0OSJ@VyDoB">
+                	<field name="TEXT">I will see a doctor</field>
+              	</shadow>
+            	</value>
+          	</block>
+        	</statement>
+      	</block>
+    	</next>
+  	</block>
+	</next>
+  </block>
+</xml>
