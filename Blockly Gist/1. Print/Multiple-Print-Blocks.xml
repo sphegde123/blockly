@@ -1,0 +1,25 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id="di64sX9ls?uS:(sd|c!T" x="288" y="112">
+    <value name="TEXT">
+      <shadow type="text" id=":A]Q[gP}tDIcQqHIN^1A">
+        <field name="TEXT">abc</field>
+      </shadow>
+      <block type="text" id="Q39HS`4`oy0EJQz76LHR">
+        <field name="TEXT">Hello</field>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="C}.HR`We{lYe~W7BGQ:`">
+        <value name="TEXT">
+          <shadow type="text" id="LIpsTXiwr12F?2Lh$th^">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="text" id="qa+two4mH*-HuMndl{q@">
+            <field name="TEXT">World</field>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
