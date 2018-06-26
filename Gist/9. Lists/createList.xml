@@ -1,0 +1,38 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="Cj2]EFA8y=Hk_cc]h,j(">lst</variable>
+  </variables>
+  <block type="variables_set" id="ZcQ3?ij[Tnl;WS/Mdh!$" x="-338" y="13">
+    <field name="VAR" id="Cj2]EFA8y=Hk_cc]h,j(" variabletype="">lst</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="qEUiOq;Cd:V/gnAuq|Zn">
+        <mutation items="5"></mutation>
+        <value name="ADD0">
+          <block type="math_number" id="ln?nm$1x`Zaq,1F!~c41">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="math_number" id="y^2%FVEQPWa=`dSba*n`">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="math_number" id="M7L-,[^Zx6-YpL?+FDvb">
+            <field name="NUM">3</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="ZVZ]k}[f_*[juwM-h|$-">
+            <field name="TEXT">Hello</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="*@eqP}vyOkd,lHTjwR};">
+            <field name="TEXT">World</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>
