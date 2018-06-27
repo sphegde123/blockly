@@ -1,0 +1,56 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="-e/H]lg}q3@V[WaGN|4e">myName</variable>
+    <variable type="" id="InG-%$`rB;z7*b4-m@9*">myAge</variable>
+  </variables>
+  <block type="variables_set" id="D^NWo5Pz],;p0r@B$+1|" x="-113" y="-63">
+    <field name="VAR" id="-e/H]lg}q3@V[WaGN|4e" variabletype="">myName</field>
+    <value name="VALUE">
+      <block type="text" id="=5lO5O[t9zH!,n@]TSgw">
+        <field name="TEXT"> Name </field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="WDL_6{?eT5]?;t?q:r`b">
+        <field name="VAR" id="InG-%$`rB;z7*b4-m@9*" variabletype="">myAge</field>
+        <value name="VALUE">
+          <block type="math_number" id="ZB/LR;HvoN,?=f}dib_E">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <next>
+          <block type="text_print" id="~u3MB`h~651!j,GW/%V;">
+            <value name="TEXT">
+              <shadow type="text" id="[I*942p^;*]dMDG);ubo">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="text_join" id="]uR,Wy4hO%ht1kCX@QPx">
+                <mutation items="4"></mutation>
+                <value name="ADD0">
+                  <block type="variables_get" id="@HGGT^h+^=fu^B)2dT;J">
+                    <field name="VAR" id="-e/H]lg}q3@V[WaGN|4e" variabletype="">myName</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="313KV~o`Od7rf1qesH6]">
+                    <field name="TEXT">is </field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="variables_get" id="]Ed_ivI1,D{rJkRFCw%d">
+                    <field name="VAR" id="InG-%$`rB;z7*b4-m@9*" variabletype="">myAge</field>
+                  </block>
+                </value>
+                <value name="ADD3">
+                  <block type="text" id="k25Xu:I_@J%WVE%dtSN{">
+                    <field name="TEXT"> years old</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
