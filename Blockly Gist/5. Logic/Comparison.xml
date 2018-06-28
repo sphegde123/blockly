@@ -1,0 +1,23 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id="3,pu?d=HW$d7A}AaP||T" x="-112" y="112">
+    <value name="TEXT">
+      <shadow type="text" id="{[/.:P4r`QS-5=Bn2vf?">
+        <field name="TEXT">abc</field>
+      </shadow>
+      <block type="logic_compare" id="8/#8}sd1?_Nv}Ni($wZS">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="math_number" id="]xHJ^!kS8b@?v|bAZ]1O">
+            <field name="NUM">6</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="B7Kfw{|5[$b{(-u6@Bs5">
+            <field name="NUM">8</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>
