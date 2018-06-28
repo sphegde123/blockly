@@ -1,0 +1,62 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="{is5`ojDo5`%xLM%pKTO">lst</variable>
+  </variables>
+  <block type="variables_set" id="~}^!1Noq!V(/mIoV5$pH" x="-62" y="-288">
+    <field name="VAR" id="{is5`ojDo5`%xLM%pKTO" variabletype="">lst</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="S|zD!B/H]heBw9D[Rfnh">
+        <mutation items="5"></mutation>
+        <value name="ADD0">
+          <block type="math_number" id="YZ{nm!Lf++dE@HCY6OoU">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="math_number" id="Ip9p$OkZ+%t157zYS[,H">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="math_number" id="4eRrCC{gI[K`Z%%*(,dQ">
+            <field name="NUM">3</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="lHjf1SwL*ePx(T^!rBlh">
+            <field name="TEXT">Hello</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id=":NTWGObsVhE1{3@zjG^#">
+            <field name="TEXT">World</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="l%7qZh.DS7Imo6aqC+~{">
+        <value name="TEXT">
+          <shadow type="text" id="?R(uv[R_d;?@i|%Jt9cl">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="lists_getIndex" id="h5K:-qm](m4fOh0c86c{">
+            <mutation statement="false" at="true"></mutation>
+            <field name="MODE">GET</field>
+            <field name="WHERE">FROM_START</field>
+            <value name="VALUE">
+              <block type="variables_get" id="j#@@Y@o8wMUkMi(3U3h`">
+                <field name="VAR" id="{is5`ojDo5`%xLM%pKTO" variabletype="">lst</field>
+              </block>
+            </value>
+            <value name="AT">
+              <block type="math_number" id="OazRW-2=8*Sk.vtq(E~]">
+                <field name="NUM">4</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
