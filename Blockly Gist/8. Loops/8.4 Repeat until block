@@ -1,0 +1,142 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="8!NuWYk0PaWX_zCy:RkF">input</variable>
+    <variable type="" id="IH++sAK#6zRnxkC}xvUe">factorial</variable>
+    <variable type="" id="^W%T_^%a-jdTFOge=$c{">counter</variable>
+  </variables>
+  <block type="variables_set" id="8fC^iNOh7AK0joY4u)ru" x="-13" y="-87">
+    <field name="VAR" id="8!NuWYk0PaWX_zCy:RkF" variabletype="">input</field>
+    <value name="VALUE">
+      <block type="text_prompt_ext" id="4nfBAkG1M,b{8,F(OS/=">
+        <mutation type="NUMBER"></mutation>
+        <field name="TYPE">NUMBER</field>
+        <value name="TEXT">
+          <shadow type="text" id="GyR7d@kttEW0GL9q3NM4">
+            <field name="TEXT">Enter a number</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="4=M)=sbrr:F4rxRH[Kn.">
+        <field name="VAR" id="IH++sAK#6zRnxkC}xvUe" variabletype="">factorial</field>
+        <value name="VALUE">
+          <block type="variables_get" id="(DOpx#A[`B5]JCR9X+At">
+            <field name="VAR" id="8!NuWYk0PaWX_zCy:RkF" variabletype="">input</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="F;4dB2YBsgJS!GKFwe[w">
+            <field name="VAR" id="^W%T_^%a-jdTFOge=$c{" variabletype="">counter</field>
+            <value name="VALUE">
+              <block type="math_arithmetic" id="eQEouEAS~l2e058};{C@">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <shadow type="math_number" id="djCsBDT}_:a*Twt$@Ma_">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="M$P+i^jWtXg/j5M`|G-p">
+                    <field name="VAR" id="8!NuWYk0PaWX_zCy:RkF" variabletype="">input</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id=".U+66?2Mvx_LGgRl{UCE">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="controls_whileUntil" id="!$WVJ?E4GSjBp,jLYAoG">
+                <field name="MODE">UNTIL</field>
+                <value name="BOOL">
+                  <block type="logic_compare" id="|!Bf=M}4]:PSEF~6Ea69">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="Et`MBL0RfLtwK}UhB^W`">
+                        <field name="VAR" id="^W%T_^%a-jdTFOge=$c{" variabletype="">counter</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="925%91#2I?8:,%p^o**M">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="variables_set" id="5JYN42z7BeQ_6`uH{.s=">
+                    <field name="VAR" id="IH++sAK#6zRnxkC}xvUe" variabletype="">factorial</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="7yiVt138e,Xf[RR#W?Gn">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <shadow type="math_number" id="cK})fp74Zpy-4gCX8Ag:">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="y%Q*auogRV{b%AJo6G6J">
+                            <field name="VAR" id="IH++sAK#6zRnxkC}xvUe" variabletype="">factorial</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="h7R;0jX@2W#J:reJ?(ew">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="O]cAFh2G15In:jZ@C4MQ">
+                            <field name="VAR" id="^W%T_^%a-jdTFOge=$c{" variabletype="">counter</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="math_change" id="LKV?pBueYag7_.x|352.">
+                        <field name="VAR" id="^W%T_^%a-jdTFOge=$c{" variabletype="">counter</field>
+                        <value name="DELTA">
+                          <shadow type="math_number" id="`NWqS0NA[7o!o6+EyQdh">
+                            <field name="NUM">-1</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="text_print" id="l3SOwm:YSn1x:WVWEt5`">
+                    <value name="TEXT">
+                      <shadow type="text" id="qAi_@=l2`rxiBnd$#/t7">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block type="text_join" id=").KZ*hfUtQ4]mh?L,-~O">
+                        <mutation items="4"></mutation>
+                        <value name="ADD0">
+                          <block type="text" id="8w@x6qb)|hK*p|^Q#r`4">
+                            <field name="TEXT">The factorial of </field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="variables_get" id="FY?/9n,NAgjyv?E-`Gkx">
+                            <field name="VAR" id="8!NuWYk0PaWX_zCy:RkF" variabletype="">input</field>
+                          </block>
+                        </value>
+                        <value name="ADD2">
+                          <block type="text" id="S[9aj1]KvyG6#PQ|un[q">
+                            <field name="TEXT"> is </field>
+                          </block>
+                        </value>
+                        <value name="ADD3">
+                          <block type="variables_get" id="V/G^bv9~1r.v`VX6X2cr">
+                            <field name="VAR" id="IH++sAK#6zRnxkC}xvUe" variabletype="">factorial</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
