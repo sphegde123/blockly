@@ -1,0 +1,53 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="UDv)/tXJu{K4wLm(@N=G">i</variable>
+  </variables>
+  <block type="controls_forEach" id="w{ejSKnJweReNNlkZ_rk" x="-363" y="88">
+    <field name="VAR" id="UDv)/tXJu{K4wLm(@N=G" variabletype="">i</field>
+    <value name="LIST">
+      <block type="lists_create_with" id="oe[8Uu5_?8+]v+mD+om)">
+        <mutation items="3"></mutation>
+        <value name="ADD0">
+          <block type="math_number" id="7HLve;lC_(~V6l]7keeV">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="math_number" id="^5,s.-[}~*/s._ej)yY+">
+            <field name="NUM">3</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="math_number" id="f1w+mrY`s]fY1{]@St1y">
+            <field name="NUM">5</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="text_print" id="95@;~sY%Xt;v=`S|-/I`">
+        <value name="TEXT">
+          <shadow type="text" id="o`Ni3]OqqB6z1(6jUD!Z">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="math_arithmetic" id="`Kb^^5nKFL7xD?H(6LU^">
+            <field name="OP">MULTIPLY</field>
+            <value name="A">
+              <shadow type="math_number" id="p+J+tI:mfU:5lk6tyRoA">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="@{FSPE%;w1!?e|K!PpBD">
+                <field name="VAR" id="UDv)/tXJu{K4wLm(@N=G" variabletype="">i</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="E#1KHxMq3r{XJ1Z1%Q?(">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
