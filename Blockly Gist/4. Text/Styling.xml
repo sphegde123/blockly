@@ -1,0 +1,100 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="yqk}CM)TD~NT($VEuJq5">userName</variable>
+    <variable type="" id="zqJK#V%M3(iO%=,Uk$}+">drink</variable>
+  </variables>
+  <block type="variables_set" id="Sdx:CFPu#R6@JyQstmrG" x="-63" y="38">
+    <field name="VAR" id="yqk}CM)TD~NT($VEuJq5" variabletype="">userName</field>
+    <value name="VALUE">
+      <block type="text_trim" id="e5dbU/kNVaI4bu5hTs3r">
+        <field name="MODE">BOTH</field>
+        <value name="TEXT">
+          <shadow type="text" id=")-Pc9^7$4lqPS_XbCY[8">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="text_changeCase" id=";Po3]w@Jj*kInJta.dj[">
+            <field name="CASE">TITLECASE</field>
+            <value name="TEXT">
+              <shadow type="text" id="U*l0/GQXhzoPmo_~cG/?">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="text_prompt_ext" id="-e^:55`S$[quqG(i1l*C">
+                <mutation type="TEXT"></mutation>
+                <field name="TYPE">TEXT</field>
+                <value name="TEXT">
+                  <shadow type="text" id="t(?B4bLwf5oe?/K{;3WA">
+                    <field name="TEXT">What is your name?</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="o[[1:oUHv*/*WoKREXIg">
+        <field name="VAR" id="zqJK#V%M3(iO%=,Uk$}+" variabletype="">drink</field>
+        <value name="VALUE">
+          <block type="text_trim" id="tt$,oY~0IN$HWCQVL[u~">
+            <field name="MODE">BOTH</field>
+            <value name="TEXT">
+              <shadow type="text" id=")-Pc9^7$4lqPS_XbCY[8">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="text_changeCase" id="G0?b{adO-FO3nIVkMD@_">
+                <field name="CASE">LOWERCASE</field>
+                <value name="TEXT">
+                  <shadow type="text" id="U*l0/GQXhzoPmo_~cG/?">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="text_prompt_ext" id="vwI)xQ{rHjjwXXs8bhqU">
+                    <mutation type="TEXT"></mutation>
+                    <field name="TYPE">TEXT</field>
+                    <value name="TEXT">
+                      <shadow type="text" id="H6lW6i%hspy4=|N,;|%a">
+                        <field name="TEXT">What is your favorite drink?</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="text_print" id="Ko+1p)S8`_U27l(LogV+">
+            <value name="TEXT">
+              <shadow type="text" id="m5v];SmzX3hfSyU@OOs+">
+                <field name="TEXT"></field>
+              </shadow>
+              <block type="text_join" id="_UsTgbvU%l%x$EXqQigd">
+                <mutation items="4"></mutation>
+                <value name="ADD0">
+                  <block type="variables_get" id="vkK4J[@eGlz2xm^1}:KX">
+                    <field name="VAR" id="yqk}CM)TD~NT($VEuJq5" variabletype="">userName</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="|{_^25i^2H-}zk^RI|{/">
+                    <field name="TEXT"> wants a </field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="variables_get" id=";qm=s%h$IN.xI6]~zDO?">
+                    <field name="VAR" id="zqJK#V%M3(iO%=,Uk$}+" variabletype="">drink</field>
+                  </block>
+                </value>
+                <value name="ADD3">
+                  <block type="text" id="dr5^R{e~8$EjFu:rgKnx">
+                    <field name="TEXT">.</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
