@@ -1,0 +1,59 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="C?:*IVn%@?Awxk/1)ZL[">i</variable>
+  </variables>
+  <block type="controls_for" id="!Lvkwi/Mjrfz]Sq@,#(_" x="-312" y="87">
+    <field name="VAR" id="C?:*IVn%@?Awxk/1)ZL[" variabletype="">i</field>
+    <value name="FROM">
+      <shadow type="math_number" id="Eanjh;_i0K.GFlfNG6_I">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="TO">
+      <shadow type="math_number" id="3Nbk#MzTuA7hoRhjYCXz">
+        <field name="NUM">10</field>
+      </shadow>
+    </value>
+    <value name="BY">
+      <shadow type="math_number" id="i,d)6o?j/rL8,}J18$$;">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="Y?57}}4eN=d`##92Q9bK">
+        <value name="IF0">
+          <block type="logic_compare" id="zTM4UWSbTw|.{TYJx`oY">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="variables_get" id="(tKWMj1sz)tD`]DIg.2~">
+                <field name="VAR" id="C?:*IVn%@?Awxk/1)ZL[" variabletype="">i</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="VWd]?em`7H|yzZK(QA*X">
+                <field name="NUM">5</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_flow_statements" id="!NJA_^o+NSWaf^^|mMV[">
+            <field name="FLOW">CONTINUE</field>
+          </block>
+        </statement>
+        <next>
+          <block type="text_print" id=";w[R(M}}Bwq9bD9U;54a">
+            <value name="TEXT">
+              <shadow type="text" id="QHR-k6^MaArLoP-!4ZlI">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="variables_get" id="0kf~0Rpu=9-[TvR%$7lh">
+                <field name="VAR" id="C?:*IVn%@?Awxk/1)ZL[" variabletype="">i</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
