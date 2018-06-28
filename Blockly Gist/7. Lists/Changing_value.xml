@@ -1,0 +1,94 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="{is5`ojDo5`%xLM%pKTO">lst</variable>
+  </variables>
+  <block type="variables_set" id="~}^!1Noq!V(/mIoV5$pH" x="-62" y="-288">
+    <field name="VAR" id="{is5`ojDo5`%xLM%pKTO" variabletype="">lst</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="S|zD!B/H]heBw9D[Rfnh">
+        <mutation items="5"></mutation>
+        <value name="ADD0">
+          <block type="math_number" id="YZ{nm!Lf++dE@HCY6OoU">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="math_number" id="Ip9p$OkZ+%t157zYS[,H">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="math_number" id="4eRrCC{gI[K`Z%%*(,dQ">
+            <field name="NUM">3</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="lHjf1SwL*ePx(T^!rBlh">
+            <field name="TEXT">Hello</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id=":NTWGObsVhE1{3@zjG^#">
+            <field name="TEXT">World</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="lists_setIndex" id="V-`Z6mna^52/t1CN[rv|">
+        <mutation at="true"></mutation>
+        <field name="MODE">SET</field>
+        <field name="WHERE">FROM_START</field>
+        <value name="LIST">
+          <block type="variables_get" id="[6T)Lx6?Z#u_Bxc|p,id">
+            <field name="VAR" id="{is5`ojDo5`%xLM%pKTO" variabletype="">lst</field>
+          </block>
+        </value>
+        <value name="AT">
+          <block type="math_number" id="WT+DWeR_%pX-H`Bl[f[[">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <value name="TO">
+          <block type="math_number" id="w2Cm/O%2PssE`/UXV_J6">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <next>
+          <block type="lists_setIndex" id="Q[MR$qD1s^c,+D|(OHk.">
+            <mutation at="true"></mutation>
+            <field name="MODE">SET</field>
+            <field name="WHERE">FROM_START</field>
+            <value name="LIST">
+              <block type="variables_get" id="rJBd1oQMB++WbTF)CR8J">
+                <field name="VAR" id="{is5`ojDo5`%xLM%pKTO" variabletype="">lst</field>
+              </block>
+            </value>
+            <value name="AT">
+              <block type="math_number" id="#/38wWAoc#k!|j+,r*tU">
+                <field name="NUM">4</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="text" id="E6n)*K7L@:-7.K7$Lp]5">
+                <field name="TEXT">Bye</field>
+              </block>
+            </value>
+            <next>
+              <block type="text_print" id="-E7z)=_5S9Wj**ng8{kE">
+                <value name="TEXT">
+                  <shadow type="text" id="C@Qi:K2~%?1IAVa;^#G$">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="variables_get" id="Qki08nZ=pV;_HnR-$X/o">
+                    <field name="VAR" id="{is5`ojDo5`%xLM%pKTO" variabletype="">lst</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
