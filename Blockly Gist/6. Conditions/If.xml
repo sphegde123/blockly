@@ -1,0 +1,50 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="dU.$PB):Mq:,(-i_Aa%)">num</variable>
+  </variables>
+  <block type="variables_set" id="fa9Bu4#4lB)x.veo42^^" x="-212" y="-13">
+    <field name="VAR" id="dU.$PB):Mq:,(-i_Aa%)" variabletype="">num</field>
+    <value name="VALUE">
+      <block type="text_prompt_ext" id="yGTTB*9[pvKGr4{v5/W6">
+        <mutation type="NUMBER"></mutation>
+        <field name="TYPE">NUMBER</field>
+        <value name="TEXT">
+          <shadow type="text" id="=e-bK,=Ctt/;nk1`aTj?">
+            <field name="TEXT">Enter a number</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="controls_if" id="na=668]LL`5(SL6B?X~J">
+        <value name="IF0">
+          <block type="logic_compare" id="ap{YQs))!@`DPo0WTfEV">
+            <field name="OP">GT</field>
+            <value name="A">
+              <block type="variables_get" id="R5naBI^=[/#t`==jN:FA">
+                <field name="VAR" id="dU.$PB):Mq:,(-i_Aa%)" variabletype="">num</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="~io$nFL[N}m0nX]`uZ{i">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="text_print" id="b{Zlg-V79oF-=CfKFD^-">
+            <value name="TEXT">
+              <shadow type="text" id="G4MU:CRE[ffd~4mbw0P7">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="text" id="scx@K*q7pX)Oso@K_{_Q">
+                <field name="TEXT">This number is positive</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>
