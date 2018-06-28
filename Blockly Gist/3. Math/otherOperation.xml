@@ -1,0 +1,178 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id=",fwe/.)*jom[(6|qyXLU" x="137" y="62">
+    <value name="TEXT">
+      <shadow type="text" id="Oj!P=wC(v]ZBb^dwwf~I">
+        <field name="TEXT">abc</field>
+      </shadow>
+      <block type="math_round" id="+qhkQG|?f`/YP=bV(v2Y">
+        <field name="OP">ROUND</field>
+        <value name="NUM">
+          <shadow type="math_number" id="w5l%g]mx1I@Kcp,PDQiX">
+            <field name="NUM">4.4999</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="MN/%*O{6d-/)^DWCE}mt">
+        <value name="TEXT">
+          <shadow type="text" id="Oj!P=wC(v]ZBb^dwwf~I">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="math_round" id="c(Ev@|St-CTO5XD[-F*S">
+            <field name="OP">ROUND</field>
+            <value name="NUM">
+              <shadow type="math_number" id="QZ6NI=yeu5`K5o!Th7wH">
+                <field name="NUM">5.5111</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="text_print" id="t?^FZMagGv1y_`0}H(H-">
+            <value name="TEXT">
+              <shadow type="text" id="Oj!P=wC(v]ZBb^dwwf~I">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="math_round" id="I`h5sI?tIam;[O^7T1IF">
+                <field name="OP">ROUNDUP</field>
+                <value name="NUM">
+                  <shadow type="math_number" id="9+jdK0IVa-zo9HWl9j$.">
+                    <field name="NUM">5.5111</field>
+                  </shadow>
+                  <block type="math_constant" id="r8KDLV3wK#{{;wz.}?Qc">
+                    <field name="CONSTANT">PI</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="text_print" id="Q-?;QVeB|9PJOhg)^7qG">
+                <value name="TEXT">
+                  <shadow type="text" id="Oj!P=wC(v]ZBb^dwwf~I">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="math_round" id="wl7~(Xev%AeIqg@j(+ir">
+                    <field name="OP">ROUNDUP</field>
+                    <value name="NUM">
+                      <shadow type="math_number" id="9+jdK0IVa-zo9HWl9j$.">
+                        <field name="NUM">5.5111</field>
+                      </shadow>
+                      <block type="math_constant" id="-gn,MHLjD,VQ+e(AAV$U">
+                        <field name="CONSTANT">E</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="text_print" id="sg%kjWJqSlLVBmXB7_Sl">
+                    <value name="TEXT">
+                      <shadow type="text" id="Oj!P=wC(v]ZBb^dwwf~I">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block type="math_round" id="MX?DoKq[Id]0./%I5zWN">
+                        <field name="OP">ROUNDDOWN</field>
+                        <value name="NUM">
+                          <shadow type="math_number" id="9+jdK0IVa-zo9HWl9j$.">
+                            <field name="NUM">5.5111</field>
+                          </shadow>
+                          <block type="math_constant" id="swj(8Cu+Nq#CAf*by[r1">
+                            <field name="CONSTANT">GOLDEN_RATIO</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="text_print" id="!:HaU0QMn#@;5,eF}$?W">
+                        <value name="TEXT">
+                          <shadow type="text" id="Oj!P=wC(v]ZBb^dwwf~I">
+                            <field name="TEXT">abc</field>
+                          </shadow>
+                          <block type="math_round" id="rD$HeddRIm==2dS#?_{7">
+                            <field name="OP">ROUNDDOWN</field>
+                            <value name="NUM">
+                              <shadow type="math_number" id="9+jdK0IVa-zo9HWl9j$.">
+                                <field name="NUM">5.5111</field>
+                              </shadow>
+                              <block type="math_constant" id="ZL-8Xy5,8sJkbshJ:90W">
+                                <field name="CONSTANT">SQRT2</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="text_print" id="s?ndgg1{K7)#%?j=uN|`">
+                            <value name="TEXT">
+                              <shadow type="text" id="Oj!P=wC(v]ZBb^dwwf~I">
+                                <field name="TEXT">abc</field>
+                              </shadow>
+                              <block type="math_modulo" id=")e.}p;:PKczzSIS?r4fG">
+                                <value name="DIVIDEND">
+                                  <shadow type="math_number" id="HLWPy4-Ca=uqdIu]3mf_">
+                                    <field name="NUM">10</field>
+                                  </shadow>
+                                </value>
+                                <value name="DIVISOR">
+                                  <shadow type="math_number" id="}a!DaBn0!oS{uwh_xX^(">
+                                    <field name="NUM">3</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="text_print" id="6DOxIVeeVbMj-)shyFsc">
+                                <value name="TEXT">
+                                  <shadow type="text" id="Oj!P=wC(v]ZBb^dwwf~I">
+                                    <field name="TEXT">abc</field>
+                                  </shadow>
+                                  <block type="math_modulo" id="_x{m38ysd=`7Xkz}Vr,2">
+                                    <value name="DIVIDEND">
+                                      <shadow type="math_number" id="12vse6p=%iB})avc.k(V">
+                                        <field name="NUM">60</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="DIVISOR">
+                                      <shadow type="math_number" id="4%5*iyIX*9S{Rc|KxGsj">
+                                        <field name="NUM">32</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="text_print" id="[2/9BzMRw|Q5x/Sa?=15">
+                                    <value name="TEXT">
+                                      <shadow type="text" id="Oj!P=wC(v]ZBb^dwwf~I">
+                                        <field name="TEXT">abc</field>
+                                      </shadow>
+                                      <block type="math_modulo" id=".06}vK$S$/nPJ*sQ|0xp">
+                                        <value name="DIVIDEND">
+                                          <shadow type="math_number" id="rA[YH*l[$D]a%?ahfi=z">
+                                            <field name="NUM">24</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="DIVISOR">
+                                          <shadow type="math_number" id="UbV*Y:F8KhKRoP/rfh}l">
+                                            <field name="NUM">6</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
