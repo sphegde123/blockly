@@ -1,0 +1,23 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id="h#zCF@LE{-yO!v|.qc9J" x="-212" y="237">
+    <value name="TEXT">
+      <shadow type="text" id="pWL0e9o_CwzL!tKW0+O#">
+        <field name="TEXT">abc</field>
+      </shadow>
+      <block type="logic_operation" id="$f:^xqaw3GJ%ol}?2Zb]">
+        <field name="OP">AND</field>
+        <value name="A">
+          <block type="logic_boolean" id="1Q,#EZhaSBy`XKJhJ4|z">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="logic_boolean" id="z(Jv[.ivhzX%+9IvK?Rw">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>
