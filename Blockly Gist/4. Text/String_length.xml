@@ -1,0 +1,17 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id="8f7mw?^d3(Y-Eh71Ez?6" x="-188" y="38">
+    <value name="TEXT">
+      <shadow type="text" id="jTPNXZo*uK|0V`kRORzD">
+        <field name="TEXT">abc</field>
+      </shadow>
+      <block type="text_length" id="^!%e%oE@vBY:$;[pt[(4">
+        <value name="VALUE">
+          <shadow type="text" id="Mv98K9yp}IQ3-?C3xG(9">
+            <field name="TEXT">Apple</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>
