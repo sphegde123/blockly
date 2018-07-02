@@ -1,0 +1,38 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id=".@=MT?{1TU-HtW7SYbw#">myVariable</variable>
+  </variables>
+  <block type="variables_set" id="nF(H#ku_*TXIGI]$j5Bj" x="-87" y="63">
+    <field name="VAR" id=".@=MT?{1TU-HtW7SYbw#" variabletype="">myVariable</field>
+    <value name="VALUE">
+      <block type="math_number" id="}{(pJ0oC2av)Eb{c4vA:">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="math_change" id="Y??0C@tX0wkG7/yq[s?$">
+        <field name="VAR" id=".@=MT?{1TU-HtW7SYbw#" variabletype="">myVariable</field>
+        <value name="DELTA">
+          <shadow type="math_number" id="m`AhVNH1nXha/wO#v,GK">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="math_number" id="6`C){yHAH)^7XMMpTP7V">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="text_print" id="E~^me*wM7[+a46g71lxN">
+            <value name="TEXT">
+              <shadow type="text" id="Q`TSHGW#!|OqCde$@yo:">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="variables_get" id="V3gd7RNqTUEs^56:FQT/">
+                <field name="VAR" id=".@=MT?{1TU-HtW7SYbw#" variabletype="">myVariable</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
