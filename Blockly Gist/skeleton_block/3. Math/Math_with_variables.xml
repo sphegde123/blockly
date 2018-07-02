@@ -1,0 +1,38 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="nmD.v=W(0`qXsz}vp*p]">myVariable</variable>
+  </variables>
+  <block type="variables_set" id="HhlQyAkOA$nJy4s5_o/E" x="263" y="63">
+    <field name="VAR" id="nmD.v=W(0`qXsz}vp*p]" variabletype="">myVariable</field>
+    <value name="VALUE">
+      <block type="math_number" id="VAIY8+E!E^9=mx;]vbWI">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="=vN[ITGFK|/BuI|{K1e)">
+        <value name="TEXT">
+          <shadow type="text" id="hPzzK|coK)n@-*Sb@n8Y">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="math_arithmetic" id="e*(,cbeXULQYp?QYe}!U">
+            <field name="OP">ADD</field>
+            <value name="A">
+              <shadow type="math_number" id="yeIe#xOCrfFMsNAXpNc,">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="Kj`MC`+Fb8ffV}A#,X6;">
+                <field name="VAR" id="nmD.v=W(0`qXsz}vp*p]" variabletype="">myVariable</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="y_-MdutE~yWm^G:7Zt/}">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
