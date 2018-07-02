@@ -1,0 +1,36 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="PHUs0*=ZVQVVEVw~%]N|">myText</variable>
+    <variable type="" id="Ca!NC_a`phcDfqZ6wJR1">{textVariable}</variable>
+  </variables>
+  <block type="variables_set" id="K|IGdYl(a1@B?kr8-gpo" x="13" y="63">
+    <field name="VAR" id="PHUs0*=ZVQVVEVw~%]N|" variabletype="">myText</field>
+    <value name="VALUE">
+      <block type="text" id="MaHIiOD-/%g61s4GjZ/F">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="n{g,WsSE*LyY^*.BVe:@">
+        <value name="TEXT">
+          <shadow type="text" id="Z:9,`hd^*NNv1*|?R2F5">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="text_indexOf" id="dsfk[j*tjQK*ACZct}|3">
+            <field name="END">FIRST</field>
+            <value name="VALUE">
+              <block type="variables_get" id="X*=t~~}x9Z)R6^nvLSdd">
+                <field name="VAR" id="Ca!NC_a`phcDfqZ6wJR1" variabletype="">{textVariable}</field>
+              </block>
+            </value>
+            <value name="FIND">
+              <shadow type="text" id="w(i4MNgUC:*SKGs4~3Em">
+                <field name="TEXT"></field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
