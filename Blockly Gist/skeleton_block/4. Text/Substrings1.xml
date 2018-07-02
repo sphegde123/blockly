@@ -1,0 +1,32 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="14j(~(I7t#`JYMCCuB#%">{textVariable}</variable>
+  </variables>
+  <block type="variables_set" id="+;TeZ6fGm9.}Qlkcw%{*" x="38" y="13">
+    <field name="VAR" id="14j(~(I7t#`JYMCCuB#%" variabletype="">{textVariable}</field>
+    <value name="VALUE">
+      <block type="text" id="~2gTDV*f5{aX.0hMK,S8">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="EHK(wBq/7g8SX%5w`;Jm">
+        <value name="TEXT">
+          <shadow type="text" id="9.z1COueEy+).n$#30a}">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="text_getSubstring" id="X1x(Z_]AdnG/vciQZVLH">
+            <mutation at1="true" at2="true"></mutation>
+            <field name="WHERE1">FROM_START</field>
+            <field name="WHERE2">FROM_START</field>
+            <value name="STRING">
+              <block type="variables_get" id="tI|)@RLi|/%N8p(@B-^J">
+                <field name="VAR" id="14j(~(I7t#`JYMCCuB#%" variabletype="">{textVariable}</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
