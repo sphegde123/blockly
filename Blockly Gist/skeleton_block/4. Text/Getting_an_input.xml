@@ -1,0 +1,41 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="$lj/.rAK@Au#|+o^|=v1">userName</variable>
+  </variables>
+  <block type="variables_set" id="6nLUt*5K59Ty`Fmmd-Dy" x="-137" y="62">
+    <field name="VAR" id="$lj/.rAK@Au#|+o^|=v1" variabletype="">userName</field>
+    <value name="VALUE">
+      <block type="text_prompt_ext" id=",AMRI;MvA(]nsNXgWq*D">
+        <mutation type="TEXT"></mutation>
+        <field name="TYPE">TEXT</field>
+        <value name="TEXT">
+          <shadow type="text" id="]+G1Alfr$3riTI|Q?]vx">
+            <field name="TEXT"></field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="@5NEulsRwE|=t0YozxT[">
+        <value name="TEXT">
+          <shadow type="text" id="_Mo$g/l}GL)_wB/Rl_|Y">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="text_join" id="$s..0%uW:?_.vc4#+Kx-">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="text" id="n9+R-97rai+Ff1tM]jva">
+                <field name="TEXT"></field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="variables_get" id="bEf9yUzW~8w|UmJ+GM-w">
+                <field name="VAR" id="$lj/.rAK@Au#|+o^|=v1" variabletype="">userName</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
