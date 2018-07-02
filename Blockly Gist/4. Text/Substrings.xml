@@ -1,0 +1,97 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="5S5]Xn1eeB9ZSuhIo=0}">myText</variable>
+    <variable type="" id="vNjuMn(sy/VlL/bbM}XH">occurence</variable>
+  </variables>
+  <block type="variables_set" id="BN(4]]kRwx%L~EF3M@uB" x="-237" y="-188">
+    <field name="VAR" id="5S5]Xn1eeB9ZSuhIo=0}" variabletype="">myText</field>
+    <value name="VALUE">
+      <block type="text" id="fT2BGKX@GZ^Xt;ow?]Is">
+        <field name="TEXT">Hello World</field>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="H5XtBh-9O+qn7u=9iiCC">
+        <value name="TEXT">
+          <shadow type="text" id="~%Q@/ZXx~#4$g=zp!f9V">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="text_getSubstring" id="owx-c:]K_M!h;+m3SiyJ">
+            <mutation at1="true" at2="true"></mutation>
+            <field name="WHERE1">FROM_START</field>
+            <field name="WHERE2">FROM_START</field>
+            <value name="STRING">
+              <block type="variables_get" id="]MpRoa,5IVv$d:P$;fg|">
+                <field name="VAR" id="5S5]Xn1eeB9ZSuhIo=0}" variabletype="">myText</field>
+              </block>
+            </value>
+            <value name="AT1">
+              <block type="math_number" id="Ryo}=D?PPDN8BYxl(!gv">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+            <value name="AT2">
+              <block type="math_number" id="^]:y-wFCEA|Wr9lU=~Pk">
+                <field name="NUM">4</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="(l#xSYY#F=2$|1nVhWt,">
+            <field name="VAR" id="vNjuMn(sy/VlL/bbM}XH" variabletype="">occurence</field>
+            <value name="VALUE">
+              <block type="text" id="We5`#0_R4{tR0B++y1!6">
+                <field name="TEXT">a banana</field>
+              </block>
+            </value>
+            <next>
+              <block type="text_print" id="}krntK{6ZL)2sEu^eHL8">
+                <value name="TEXT">
+                  <shadow type="text" id="ZZMWAVq|_{B(Co?(Omk5">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="text_indexOf" id="P,a9)O@@xe2LUs.SYe8z">
+                    <field name="END">FIRST</field>
+                    <value name="VALUE">
+                      <block type="variables_get" id="Q31rP1WD|?~#|)`#$mSI">
+                        <field name="VAR" id="vNjuMn(sy/VlL/bbM}XH" variabletype="">occurence</field>
+                      </block>
+                    </value>
+                    <value name="FIND">
+                      <shadow type="text" id="fc2#$#LY/3=9X}:NIbg~">
+                        <field name="TEXT">an</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="text_print" id="]|@zx~v$m2@PDh68(Pyc">
+                    <value name="TEXT">
+                      <shadow type="text" id="ZZMWAVq|_{B(Co?(Omk5">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block type="text_indexOf" id="~mYn/*[S3b.LKGNR_y_j">
+                        <field name="END">LAST</field>
+                        <value name="VALUE">
+                          <block type="variables_get" id="NdNI.mMyIS!jad?D1bMT">
+                            <field name="VAR" id="vNjuMn(sy/VlL/bbM}XH" variabletype="">occurence</field>
+                          </block>
+                        </value>
+                        <value name="FIND">
+                          <shadow type="text" id="G)XG(,LA=0g?$6-45=^S">
+                            <field name="TEXT">an</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
