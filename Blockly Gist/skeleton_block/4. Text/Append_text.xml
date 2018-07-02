@@ -1,0 +1,32 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="%.E55s5kJQ-2f=|:.PyT">myText</variable>
+  </variables>
+  <block type="variables_set" id="BB[d(#sdR|9u_ilgehHV" x="13" y="-63">
+    <field name="VAR" id="%.E55s5kJQ-2f=|:.PyT" variabletype="">myText</field>
+    <value name="VALUE">
+      <block type="text" id="qZOt4?t0oPm3lBE:[sf1">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <next>
+      <block type="text_append" id="(hN$U/h[Nmv9XHpoy+dX">
+        <field name="VAR" id="%.E55s5kJQ-2f=|:.PyT" variabletype="">myText</field>
+        <value name="TEXT">
+          <shadow type="text" id="Eu9_wsQ)+B|/%lqN2HF(">
+            <field name="TEXT"></field>
+          </shadow>
+        </value>
+        <next>
+          <block type="text_print" id="$9{{{/.u4,ZLOw6SW9u[">
+            <value name="TEXT">
+              <shadow type="text" id="iT[H6`Omm]6fIm-C0Hbj">
+                <field name="TEXT">abc</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
